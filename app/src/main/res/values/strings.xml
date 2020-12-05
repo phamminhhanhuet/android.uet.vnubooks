@@ -1,0 +1,276 @@
+<resources>
+    <string name="facebook_app_id">586798165452496</string>
+    <string name="facebook_application_id">586798165452496</string>
+    <string name="fb_login_protocol_scheme">fb586798165452496</string>
+    <string name="google_api">AIzaSyB_Nd1VXFFZMoyPBSXRbe_PrS6YwTX7_LI</string>
+    <string name="app_name">VNU Books</string>
+    <string name="home">Home</string>
+    <string name="category_home_completedstory">Completed story</string>
+    <string name="category_home_youmightlike">You also like...</string>
+    <string name="category_home_topicforyou">Topic for you</string>
+    <string name="category_home_trysomethingnew">Try something new</string>
+    <string name="category_home_candidates_for_awards">New candidates this week!</string>
+    <string name="text_hint">Loading..</string>
+    <string name="text_story_by">Story by</string>
+    <string name="text_search">Search</string>
+    <string name="text_library">Library</string>
+    <string name="text_notification">Notifications</string>
+    <string name="text_create">Create</string>
+    <string name="text_new_story">New Story</string>
+    <string name="text_edit_story">Edit Story</string>
+    <string name="text_edit_story_cover">Edit Story Cover</string>
+    <string name="text_story_title">Story Title</string>
+    <string name="text_chapters">Chapters</string>
+    <string name="text_story_description">Story Description</string>
+    <string name="text_tags">Tags</string>
+    <string name="text_table_of_contents">Table Of Contents</string>
+    <string name="text_more_info">More Info</string>
+    <string name="text_published">Published</string>
+    <string name="text_publish">Publish</string>
+    <string name="text_drafts">Drafts</string>
+    <string name="text_update">Update</string>
+    <string name="text_messages">Messages</string>
+    <string name="text_continuing_writing">Continuing Writing</string>
+    <string name="text_reading_list">Reading list</string>
+    <string name="text_setting">Settings</string>
+    <string name="text_application_settings">Application Settings</string>
+    <string name="text_account_settings">Account Settings</string>
+    <string name="text_customize_theme">Customize Themes</string>
+    <string name="text_dark_mode">Dark Mode</string>
+    <string name="text_log_in">Log In</string>
+    <string name="text_log_out">Log Out</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="text_language">Language</string>
+    <string name="text_follow">Follows</string>
+    <string name="text_others">Others</string>
+    <string name="text_inbox">Inbox</string>
+    <string name="text_message_board">Message board</string>
+    <string name="text_new_comment">New comments about my activities</string>
+    <string name="text_new_followers">New followers</string>
+    <string name="text_vote_on_my_stories">Vote on my stories</string>
+    <string name="text_update_from_following">Updates from profiles I follow</string>
+    <string name="text_profile_picture">Profile picture</string>
+    <string name="text_background_picture">Background picture</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_account">Mouspad Account</string>
+    <string name="text_username">Username</string>
+    <string name="text_full_name">Full Name</string>
+    <string name="text_gender">Gender</string>
+    <string name="text_birthday">Birthday</string>
+    <string name="text_location">Location</string>
+    <string name="text_set_location">Set a location</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_forgot_password">Forgot Password?</string>
+    <string name="text_social_networks">Social Networks</string>
+    <string name="text_facebook">Facebook</string>
+    <string name="text_google">Google</string>
+    <string name="text_twitter">Twitter</string>
+    <string name="text_disconnect_social_networks">Disconnect your account</string>
+    <string name="text_connect_socail_networks">Connect your account</string>
+    <string name="text_on">On</string>
+    <string name="text_off">Off</string>
+    <string name="text_about">About</string>
+    <string name="text_about_us">About Mouspad</string>
+    <string name="text_help_support">Help and Support</string>
+    <string name="text_preferred_stories">Preferred Stories</string>
+    <string name="text_tap_change">Tap to change</string>
+    <string name="text_retrieving_data">Retrieving data..</string>
+    <string name="btn_readstory">Read Story</string>
+    <string name="btn_chapters">Chapters</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_in_long">Have an account? Sign in</string>
+    <string name="action_register_long">Don\'t have an account? Sign up</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="text_confirm_password">Confirm password</string>
+    <string name="action_register">Register</string>
+    <string name="action_require_account">Please sign in to continue</string>
+    <string name="action_free_account">Join now without an account</string>
+    <string name="action_valid_account">Login to write fantastic stories!</string>
+    <string name="action_goto_login">Don\'t have an account? Click here to Quick Start</string>
+    <string name="action_app_mess">New message from admin!</string>
+    <string name="text_reading_mode">Reading Mode</string>
+    <string name="text_save">Save</string>
+    <string name="text_preview">Preview</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_edit">Edit</string>
+    <string name="text_add">Add</string>
+    <string name="text_share">Share</string>
+    <string name="text_unpublish">Unpublish</string>
+    <string name="text_favorite">Favorite</string>
+    <string name="text_report">Report</string>
+    <string name="text_add_to_libary">Add to library</string>
+    <string name="text_add_to_reading_list">Add to reading list</string>
+    <string name="text_new_reading_list">Create new reading list...</string>
+    <string name="text_comments">Comments</string>
+    <string name="text_completed_story">Completed story</string>
+    <string name="text_genre">Genre</string>
+    <string name="text_confirm_change">Confirm changes</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_tap_add_media">Tap to add new media</string>
+    <string name="text_audio_start_zero">00:00</string>
+    <string name="text_youtube">From youtube</string>
+    <string name="text_write">Write</string>
+    <string name="text_edit_attribute">Text format</string>
+    <string name="text_add_media">Add media</string>
+    <string name="text_null" />
+    <string name="text_similar_story">Similar story</string>
+    <string name="text_format_text">Format text</string>
+    <string name="text_download">Download</string>
+    <string name="text_no_internet">No Internet Connection</string>
+    <string name="text_no_internet_mes">You are not connected to the internet. Make sure Wi-fi is on, Airplane Mode is off and try again.</string>
+    <string name="text_reload">Reload</string>
+
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_they">They</string>
+    <string name="gender_no">Do not want to tell</string>
+    <string name="language_vi">Vietnamese</string>
+    <string name="language_en">English</string>
+    <string name="genre_action">Action/Adventure</string>
+    <string name="genre_classic">Classics</string>
+    <string name="genre_comic">Comic Book/Graphic Novel</string>
+    <string name="genre_his">Historical Fiction</string>
+    <string name="genre_lit">Literacy Fiction</string>
+    <string name="genre_rom">Romance</string>
+    <string name="genre_sci">Science Fiction</string>
+    <string name="genre_rel">Religion</string>
+    <string name="genre_poet">Poetry</string>
+    <string name="genre_dia">Memoir/Diary</string>
+    <string name="genre_bio">Biography</string>
+    <string name="genre_doc">Essays/Documents</string>
+    <string name="genre_text">Textbook</string>
+    <string name="genre_politic">Politics/Law</string>
+
+    <!-- this belongs to ebook app-->
+    <string name="book_viewed_on">Viewed %s</string>
+    <string name="book_added_on">Added %s</string>
+
+    <string name="book_status_completed">Completed %s</string>
+    <string name="book_status_later">Later (%s)</string>
+    <string name="book_status_later2">Books marked \'Later\'</string>
+    <string name="book_status_completed2">Books marked \'Completed\'</string>
+    <string name="book_status_any">All books</string>
+    <string name="book_status_started">Open books</string>
+    <string name="book_status_none">Unread books</string>
+    <string name="mark">Show…</string>
+
+    <string name="un_mark">Unmark</string>
+    <string name="mark_later">Mark \'For later\'</string>
+    <string name="mark_completed">Mark \'Completed\'</string>
+
+    <string name="add">Add book</string>
+    <string name="add_dir">Add books from folder</string>
+    <string name="contents">Contents</string>
+    <string name="zoom">zoom</string>
+    <string name="already_added">File \"%s\" already added</string>
+    <string name="select_thisfolder">Select this folder</string>
+    <string name="cancel">Cancel</string>
+    <string name="find_folder">Find folder</string>
+    <string name="find_book">Find book</string>
+    <string name="open_book">Open book</string>
+    <string name="close_book">Close book</string>
+    <string name="remove_book">Remove book</string>
+    <string name="coulndt_add_book">Couldn\'t add \"%s\"</string>
+
+    <string name="about">About</string>
+    <string name="about_app">
+        <![CDATA[
+        All about this app\'s development is our own work, \n
+        except where we have acknowledged the use \n
+        of the works of other people.
+        ]]>
+    </string>
+    <string name="sort">Sort</string>
+    <string name="sort_by_default">Default sort</string>
+    <string name="sort_by_added_date">Sort by added</string>
+    <string name="sort_by_title">Sort by title</string>
+    <string name="sort_by_author">Sort by author</string>
+    <string name="prev_text" translatable="false">&lt;&lt;</string>
+    <string name="next_text" translatable="false">&gt;&gt;</string>
+    <string name="books_added">%d books added</string>
+    <string name="bright">Bright</string>
+    <string name="dim">Dim</string>
+    <string name="bright_medium">Medium</string>
+    <string name="book_default">Book default</string>
+    <string name="no_toc_found">No table of contents found</string>
+    <string name="added_numbooks">Added %d</string>
+    <string name="loading">Loading</string>
+    <string name="find_books_online">Find books online</string>
+    <string name="source_name">Source name</string>
+    <string name="web_url">URL</string>
+    <string name="web_add">Add</string>
+    <string name="new_websrc">New</string>
+    <string name="web_url_hint" translatable="false">http://www.</string>
+    <string name="search_res_title">Search for \'%1$s\' (%2$d)</string>
+    <string name="search_for">Search for:</string>
+    <string name="hint_search_text">Little Women</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="both">Both</string>
+    <string name="search_your_books">Search your books</string>
+    <string name="start_options">Start options</string>
+    <string name="last_read">Last read</string>
+    <string name="shortcut_latest">Continue reading</string>
+    <string name="shortcut_latest_title">Read %s</string>
+    <string name="book_bug">Something went wrong. Please report this book as a bug.</string>
+    <string name="auto_bright">Auto</string>
+
+    <string name="enable_screen_paging">Enable screen paging</string>
+    <string name="enable_scroll">Enable drag scroll</string>
+    <string name="options">Options</string>
+    <string name="text_pick_pdf">Upload your pdf file</string>
+    <string name="text_pick_epub">Upload epub/html/doc/txt file</string>
+    <string name="text_start_new_story">Start writing new your own story</string>
+
+    <string-array name="getbook_names">
+        <item>Project Mouspad</item>
+        <item>Archive.org</item>
+    </string-array>
+    <string-array name="getbook_urls">
+        <item>https://m.epub.vn/</item>
+        <item>https://archive.org/details/texts</item>
+    </string-array>
+
+    <!-- Discrete Scroll View -->
+    <string name="card_title_preview">Preview</string>
+    <string name="card_title_credits">Credits</string>
+
+    <string name="preview_title_big_cards">Big cards</string>
+    <string name="preview_title_small_cards">Small cards</string>
+    <string name="preview_title_vertical">Vertical scroll</string>
+
+    <string name="credit_title_taya">Taisiya Yurkiv</string>
+    <string name="credit_title_flaticon">Zlatko Najdenovski, Freepik</string>
+    <string name="credit_title_herriot">Herriottgrace</string>
+    <string name="credit_summary_taya">Sample app design</string>
+    <string name="credit_summary_flaticon">Monument icons from www.flaticon.com</string>
+    <string name="credit_summary_herriot">Shop goods photos from www.herriottgrace.com</string>
+
+    <string name="btn_smooth_scroll">Smooth scroll</string>
+    <string name="btn_transition_time">Transition time</string>
+
+    <string name="dialog_seekbar_transition_time">Item transition time in millis</string>
+
+    <string name="msg_no_browser">No app found to open the url</string>
+    <string name="msg_unsupported_op">Unsupported operation</string>
+
+    <string name="pref_key_transition_time" translatable="false">pref_key_transition_time</string>
+
+    <string name="mi_rate_on_github">Rate on GitHub</string>
+
+    <string name="cd_back">Back</string>
+    <string name="cd_comment">Comment</string>
+    <string name="cd_favourite">Favourite</string>
+    <string name="text_continuing_read">Continue reading</string>
+</resources>

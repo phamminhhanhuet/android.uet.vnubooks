@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_library_delete"
+        android:icon="@drawable/ic_trash_can_outline"
+        android:title="@string/text_delete"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/action_library_download"
+        android:icon="@drawable/ic_arrow_collapse_down"
+        android:title="@string/text_download"
+        app:showAsAction="ifRoom|collapseActionView" />
+</menu>

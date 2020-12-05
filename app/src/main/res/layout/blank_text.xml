@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layoutBlankText"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/action_app_mess"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:padding="10dp"
+        android:layout_gravity="center|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="60dp"
+        android:layout_toRightOf="@id/imgProfileInbox" />
+
+    <TextView
+        android:text="@string/action_require_account"
+        android:textSize="20sp"
+        android:fontFamily="@font/acme"
+        android:textStyle="normal"
+        android:padding="10dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:layout_toRightOf="@id/imgProfileInbox"
+        android:background="@drawable/background_chat_left"/>
+
+
+    <TextView
+        android:text="..."
+        android:textSize="20sp"
+        android:fontFamily="@font/acme"
+        android:textStyle="normal"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:layout_marginRight="45dp"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_chat_right"
+        android:padding="10dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gotoLoginCard"
+        android:clickable="true"
+        android:elevation="0dp"
+        android:foreground="?attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+        <TextView
+            android:id="@+id/gotoLogin"
+            android:text="@string/action_goto_login"
+            android:textSize="20sp"
+            android:fontFamily="@font/acme"
+            android:textStyle="normal"
+            android:padding="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorAccent"
+            android:layout_toRightOf="@id/imgProfileInbox"
+            android:background="@drawable/background_chat_left"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

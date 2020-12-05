@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorThemeWhite"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+   <androidx.viewpager.widget.ViewPager
+       android:id="@+id/viewPagerHome"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="8"
+       android:visibility="gone"
+       ></androidx.viewpager.widget.ViewPager>
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <LinearLayout
+          android:id="@+id/linearLayoutContainFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginBottom="50dp"
+          android:orientation="vertical"></LinearLayout>
+
+      <com.google.android.material.bottomnavigation.BottomNavigationView
+          android:id="@+id/navigationHome"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:elevation="6dp"
+          android:background="?android:attr/windowBackground"
+          android:foreground="?attr/selectableItemBackground"
+          app:itemBackground="@color/white"
+          app:itemIconTint="@color/bottom_navigation_item_color"
+          app:itemTextColor="?attr/colorPrimary"
+          app:menu="@menu/bottom_menu_home" />
+
+   </FrameLayout>
+
+
+   <com.google.android.material.tabs.TabLayout
+       android:id="@+id/tabLayoutHome"
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:layout_weight="1"
+       android:layout_below="@id/viewPagerHome"
+       android:background="?attr/colorAccent"
+       android:elevation="6dp"
+       app:tabMode="fixed"
+       app:tabIndicatorGravity="top"
+       app:tabTextColor="#d3d3d3"
+       app:tabSelectedTextColor="#ffffff"
+       app:tabIndicatorColor="#FFEB3B"
+       android:minHeight="?attr/actionBarSize"
+       android:visibility="gone">
+   </com.google.android.material.tabs.TabLayout>
+</LinearLayout>

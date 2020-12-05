@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_publish_chapter"
+        android:title="@string/text_publish"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_save_chapter"
+        android:title="@string/text_save" />
+    <item
+        android:id="@+id/action_preview_chapter"
+        android:title="@string/text_preview" />
+    <item
+        android:id="@+id/action_delete_chapter"
+        android:title="@string/text_delete" />
+</menu>

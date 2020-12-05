@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.revise.android.bottomnavigation.MainActivity">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home_outline"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/action_search_home"
+        android:icon="@drawable/ic_layers_search_outline"
+        android:title="@string/text_search" />
+
+    <item
+        android:id="@+id/action_libary_home"
+        android:icon="@drawable/ic_book_open_page_variant_outline"
+        android:title="@string/text_library" />
+
+    <item
+        android:id="@+id/action_write_home"
+        android:icon="@drawable/ic_pencil_outline"
+        android:title="@string/text_write" />
+
+    <item
+        android:id="@+id/action_updates_home"
+        android:icon="@drawable/ic_bell_outline"
+        android:title="@string/text_update" />
+</menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardViewItemInformation"
+    app:cardCornerRadius="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@drawable/drawable_layout_frame">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#F3EEEE">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgItemInformationCover"
+            android:src="@drawable/avatar"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:civ_border_width="1dp"
+            />
+        <TextView
+            android:id="@+id/txtItemInformationTitle"
+            android:text="@string/text_profile_picture"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgItemInformationCover"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/txtItemInformationActionDescription"
+            android:text="@string/text_tap_change"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgItemInformationCover"
+            android:layout_below="@id/txtItemInformationTitle"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>

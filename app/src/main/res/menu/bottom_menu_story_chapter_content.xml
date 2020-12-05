@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.revise.android.bottomnavigation.MainActivity">
+    <item
+        android:id="@+id/action_favorite_content"
+        android:icon="@drawable/ic_heart_multiple_outline"
+        android:title="@string/text_favorite" />
+
+    <item
+        android:id="@+id/action_comment_content"
+        android:icon="@drawable/ic_comment_multiple_outline"
+        android:title="@string/text_comments" />
+
+    <item
+        android:id="@+id/action_share_content"
+        android:icon="@drawable/ic_share_variant_outline"
+        android:title="@string/text_share" />
+
+</menu>

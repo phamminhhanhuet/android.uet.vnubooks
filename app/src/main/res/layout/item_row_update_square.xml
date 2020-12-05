@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3EEEE">
+
+    <ImageView
+        android:id="@+id/imgItemInformationCover"
+        android:layout_width="101dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar" />
+    <TextView
+        android:id="@+id/txtItemInformationTitle"
+        android:text="@string/text_profile_picture"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgItemInformationCover"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/txtItemInformationActionDescription"
+        android:text="@string/text_tap_change"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgItemInformationCover"
+        android:layout_below="@id/txtItemInformationTitle"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>

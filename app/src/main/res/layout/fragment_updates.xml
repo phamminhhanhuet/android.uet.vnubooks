@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Home.UpdatesFragment"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarUpdates"
+            android:title="@string/text_update"
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorThemeWhite"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/btnOptionUpdates"
+                android:src="@android:drawable/ic_menu_share"
+                android:background="@android:color/transparent"
+                android:tint="?attr/colorPrimary"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="end"/>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutUpdates"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/viewPagerHome"
+            android:background="@color/colorTabLayout"
+            android:elevation="10dp"
+            app:tabMode="fixed"
+            app:tabIndicatorGravity="bottom"
+            app:tabIndicatorColor="#FFEB3B"
+            android:minHeight="?attr/actionBarSize"
+            android:visibility="visible">
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/blankText"
+        layout="@layout/blank_text"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"></androidx.viewpager.widget.ViewPager>
+</LinearLayout>

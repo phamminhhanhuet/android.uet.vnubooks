@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.uet.android.mouspad">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.GLOBAL_SEARCH"
+        tools:ignore="ProtectedPermissions" />
+
+    <permission
+        android:name="android.permission.GLOBAL_SEARCH"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="signature|system" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:grantUriPermissions="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activity.UserPerform.FollowActivity"></activity>
+        <activity android:name=".Activity.BlankTextActivity" />
+        <activity android:name=".Activity.BookPerfrom.CategoryActivity" />
+        <activity android:name=".Activity.UserPerform.ReadingListActivity" />
+        <activity android:name=".Activity.FilterActivity" />
+        <activity android:name=".Ebook.PDFViewerActivity" />
+        <activity android:name=".Activity.IntroActivity" />
+
+        <service
+            android:name=".Service.ImplementService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="your.app.domain.NotificationService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.Notifications.MyFirebaseIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.Notifications.CloudFirebaseMessageing">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.com.uet.android.mouspad.Activity.HomeActivity" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider3486727491348979"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activity.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Activity.BookPerfrom.YoutubeSearchActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.UserPerform.InboxListActivity" />
+        <activity
+            android:name=".Activity.UserPerform.InboxActivity"
+            android:parentActivityName=".Activity.HomeActivity" />
+        <activity android:name=".Activity.BookPerfrom.CommentActivity" />
+        <activity android:name=".Activity.Authorize.RegisterActivity" />
+        <activity android:name=".Activity.Authorize.LoginActivity" />
+        <activity android:name=".Activity.UserSetting.DarkModeActivity" />
+        <activity android:name=".Activity.UserSetting.AboutUsActivity" />
+        <activity android:name=".Activity.UserSetting.HelpSupportActivity" />
+        <activity android:name=".Activity.UserSetting.CustomizeThemeActivity" />
+        <activity android:name=".Activity.UserSetting.NotificationSettingActivity" />
+        <activity android:name=".Activity.UserSetting.AccountSettingActivity" />
+        <activity android:name=".Activity.UserSetting.UserSettingActivity" />
+        <activity
+            android:name=".Activity.BookPerfrom.EditStoryChapterContentActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".Activity.BookPerfrom.EditStoryStudioActivity" />
+        <activity android:name=".Activity.UserPerform.UpdatesActivity" />
+        <activity android:name=".Activity.BookPerfrom.WriteStudioActivity" />
+        <activity android:name=".Activity.BookPerfrom.StoryChapterContentActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.BookPerfrom.StoryDetailActivity" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:includeInGlobalSearch="true"
+            android:launchMode="singleTop">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mouspad.team"
+                    android:pathPattern=".*"
+                    android:scheme="https" />
+                <data
+                    android:host="mouspad.team"
+                    android:pathPattern=".*"
+                    android:scheme="http" />
+                <data
+                    android:host="mouspad.team"
+                    android:scheme="http" />
+                <data
+                    android:host="mouspad.team"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".Activity.UserPerform.UserActivity" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- ebbook app -->
+        <activity
+            android:name=".Ebook.EpubListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.SEARCH" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mouspad.team"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+        <activity
+            android:name=".Ebook.EpubViewerActivity"
+            android:parentActivityName=".Ebook.EpubListActivity" />
+    </application>
+
+</manifest>

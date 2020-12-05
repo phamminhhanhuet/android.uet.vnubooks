@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".Ebook.EpubListActivity"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBarEpubList"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="180dp"
+        android:paddingRight="180dp"
+    />
+    <LinearLayout
+        android:id="@+id/linearLayoutEpubList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarEpubList"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:title="@string/text_edit_story"
+            android:titleTextColor="@color/colorThemeBlack">
+
+        </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="9">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerEpubList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/txtProgressEpubList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="#55888888"
+                android:gravity="center"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="5"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

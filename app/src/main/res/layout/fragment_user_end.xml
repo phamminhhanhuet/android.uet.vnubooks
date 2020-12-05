@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.UserFragment">
+
+    <FrameLayout
+        android:id="@+id/frameLayoutBackgroundUser"
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBackgroundUser"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background"
+            card_view:layout_constraintBottom_toTopOf="@+id/contentLayout"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@drawable/transparent_cover_dark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/transparent_cover_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/background_user_profile" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayoutUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatarUser"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:civ_border_color="@color/white"
+                card_view:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/txtNameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgAvatarUser"
+                android:layout_centerInParent="true"
+                android:text="Mouspad Account"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/imgAvatarUser" />
+
+            <TextView
+                android:id="@+id/txtAccountUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNameUser"
+                android:layout_centerInParent="true"
+                android:text=".@moupad"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/txtNameUser" />
+
+            <FrameLayout
+                android:id="@+id/frameLayoutFollowButtonUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAccountUser"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewButtonFollowUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    card_view:cardCornerRadius="0dp"
+                    card_view:cardBackgroundColor="@android:color/transparent"
+                    card_view:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <Button
+                            android:id="@+id/btnFollowUser"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_follow_button"
+                            android:drawableTint="@android:color/white"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Follow this user"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/btnInboxUser"
+                            android:src="@drawable/icon_messenger"
+                            app:tint="?attr/colorPrimary"
+                            android:scaleType="centerCrop"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txtDescriptionUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameLayoutFollowButtonUser"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Description Descrn ription Description"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/frameLayoutFollowButtonUser" />
+            <TextView
+                android:id="@+id/txtLocationUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescriptionUser"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/drawable_location_icon"
+                android:drawableTint="?attr/colorPrimary"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:text="From Afran, Langbash"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/txtDescriptionUser" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLocationUser"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/txtAccountUser">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtNameUser"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTotalWriteUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtNameUser"
+                        android:text="145"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtNameUser"
+                        android:text="works"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtNameUser"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTotalFollowerUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtNameUser"
+                        android:text="200"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtNameUser"
+                        android:text="followers"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtNameUser"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTotalFollowingUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtNameUser"
+                        android:text="201"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtNameUser"
+                        android:text="following"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarUser"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/transparent_total"
+        android:elevation="10dp"
+        android:foregroundTintMode="src_atop"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/drawable_layout_frame"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+           />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorThemeWhite"
+            android:text="More information"
+            android:textColor="?attr/colorPrimaryDark"
+            android:elevation="10dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/viewPagerUser"
+            android:background="@color/colorTabLayout"
+            app:tabMode="fixed"
+            app:tabTextColor="@android:color/darker_gray"
+            app:tabSelectedTextColor="?attr/colorPrimary"
+            app:tabIndicatorColor="#FFEB3B"
+            android:minHeight="?attr/actionBarSize">
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

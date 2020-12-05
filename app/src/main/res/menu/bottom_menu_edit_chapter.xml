@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.revise.android.bottomnavigation.MainActivity">
+    <item
+        android:id="@+id/action_text_attribute_edit"
+        android:icon="@drawable/ic_format_letter_case"
+        android:title="@string/text_format_text"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_null"
+        android:title="@string/text_null"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_pick_image_edit"
+        android:icon="@drawable/ic_image_edit"
+        android:title="@string/text_add_media"
+        app:showAsAction="always" />
+
+</menu>

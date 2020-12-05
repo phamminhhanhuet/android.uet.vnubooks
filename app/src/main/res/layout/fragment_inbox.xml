@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".Fragment.Inbox.InboxFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarInbox"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorThemeWhite"
+            android:elevation="10dp"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfileInbox"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerInbox"
+        android:layout_below="@id/bar_layout"
+        android:layout_above="@id/bottom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:id="@+id/bottom"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextInbox"
+            android:background="@android:color/transparent"
+            android:hint="Type a message..."
+            android:layout_toLeftOf="@id/cardviewSendInbox"
+            android:layout_centerVertical="true"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewSendInbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@android:color/transparent"
+            card_view:cardElevation="0dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:tint="?attr/colorPrimary"
+                android:src="@drawable/ic_send"
+                android:background="@android:color/transparent"
+                android:id="@+id/btnSendInbox"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

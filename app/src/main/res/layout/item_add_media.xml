@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgItemAddMedia"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/item_add_media_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textItemAddMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/text_tap_add_media"
+        app:layout_constraintBottom_toBottomOf="@+id/imgItemAddMedia"
+        app:layout_constraintEnd_toEndOf="@+id/imgItemAddMedia"
+        app:layout_constraintStart_toStartOf="@+id/imgItemAddMedia" />
+
+    <ImageView
+        android:id="@+id/menuAddMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="10dp"
+        android:translationZ="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_dots_vertical" />
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/youtubeAddMedia"
+        layout="@layout/item_youtube_view"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutAudioAddMedia"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgItemAddMedia2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:id="@+id/viewBackgroundAudio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_gallery_transparent" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imgAudioPressAddMedia"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="72dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_play_circle"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_play_circle" />
+
+        <TextView
+            android:id="@+id/textCurrentTimeAddMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/text_audio_start_zero"
+            android:textColor="@color/colorThemeWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationZ="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgAudioPressAddMedia" />
+
+        <SeekBar
+            android:id="@+id/seekBarAudioAddMedia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:translationZ="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textDurationAddMedia"
+            app:layout_constraintStart_toEndOf="@+id/textCurrentTimeAddMedia"
+            app:layout_constraintTop_toBottomOf="@+id/imgAudioPressAddMedia" />
+
+        <TextView
+            android:id="@+id/textDurationAddMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/text_audio_start_zero"
+            android:textColor="@color/colorThemeWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationZ="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgAudioPressAddMedia" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

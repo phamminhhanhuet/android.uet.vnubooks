@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+        <EditText
+            android:id="@+id/editNewReadingList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:hint="@string/text_new_reading_list"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnConfirmNewReadingList"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btnConfirmNewReadingList"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_plus"
+            android:background="@android:color/transparent"
+            android:tint="?attr/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
