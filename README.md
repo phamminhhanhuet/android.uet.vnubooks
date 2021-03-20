@@ -1,8 +1,8 @@
 # android.uet.vnubooks
 
-#VNU Books is an book-online app. 
+VNU Books is an book-online app. 
 
-#Feature:
+# Feature:
 
   - Users can post their stories like writing a simple blog or upload their ebooks with pdf and epub formats. 
   
@@ -10,13 +10,13 @@
   
   - With stories are blog-type stories, users can write about 50 chapters per story.
   
-  - A story includes genre, tags, author name, location (an option feature), which are very helpful for searching and recommending. 
+  - A story includes genre, tags, author name, location (an optional feature), which are very helpful for searching and recommending. 
   
   - Users can search books by genres, tags and authors' names.
 
   - Users are free to share their favorite books to other social flatforms which support dynamic links.
   
-  - Users can archive the stories they like in library or some reading lists. Reading lists can be created, edited (renamed, expanded, removed some stories) or deleted, but not library.
+  - Users can archive the stories they love in library or some reading lists. Reading lists can be created, edited (renamed, expanded, removed some stories) or deleted, but not library.
   
   - Stories saved in library can be readed offline, others in reading lists cannot.
 
@@ -24,8 +24,10 @@
   
   - With a valid account, users can edit their profile (full-name, account name, avatar, background image, gender, phone number, birthday, country, language).
   
-  - By the way, users can set up notification (notification when the authors they following update new contents, or when some readers comment/like/share/archive their works...), set up theme (dark/light/color theme)...
+  - By the way, users can set up notification (notification when the authors who they are following update new contents, or when some readers comment/like/share/archive their works...), set up theme (dark/light/color theme)...
   
-  - App supports follow feature, message feature, report feature, location feature (a user or a story can be assigned with a location, so that other readers can be able to know where the story was written, or where the author is working... By clicking in the location, direction feature will open google map and direct a way from readers' current location to the story/author's location), with target is building a community where the creativity is unleashed, the enthusiasm of true novelists is spreaded and a whole big-and-beyond-imagination worlds of words is created by love and sympathy. 
+  - App supports follow feature, message feature, report feature, location feature (a user or a story can be assigned with a location, so that other readers can be able to know where the story was written, or where the author is working... By clicking in the location, direction feature will open google map and direct a way from readers' current locations to the story/author's location), with target is building a community where the creativity is unleashed, the enthusiasm of true novelists is spreaded and a whole big-and-beyond-imagination worlds of words is created by love and sympathy. 
 
-#This work is developed by Pham Minh Hanh. I acknowledge vary works belong to a lot of people around internet that helped me so much in the software development process. 
+# Credit 
+
+This work is developed by Pham Minh Hanh. I acknowledge vary works belong to a lot of people around internet that helped me so much in the software development process. 
