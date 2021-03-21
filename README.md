@@ -26,7 +26,7 @@ VNU Books is an book-online app.
   
   - By the way, users can set up notification (notification when the authors who they are following update new contents, or when some readers comment/like/share/archive their works...), set up theme (dark/light/color theme)...
   
-  - App supports follow feature, message feature, report feature, location feature (a user or a story can be assigned with a location, so that other readers can be able to know where the story was written, or where the author is working... By clicking in the location, direction feature will open google map and direct a way from readers' current locations to the story/author's location), with target is building a community where the creativity is unleashed, the enthusiasm of true novelists is spreaded and a whole big-and-beyond-imagination worlds of words is created by love and sympathy. 
+  - App supports follow feature, message feature, report feature, location feature (a user or a story can be assigned with a location, so that other readers can be able to know where the story was written, or where the author is working... By clicking in the location, direction feature will open google map and direct a way from readers' current locations to the story/author's location), with the target is building a community where the creativity is unleashed, the enthusiasm of true novelists is spreaded and a whole big-and-beyond-imagination worlds of words is created by love and sympathy. 
 
 # Credit 
 
